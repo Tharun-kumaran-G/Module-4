@@ -30,11 +30,42 @@ To write a Python program that reads a file and counts the frequency of each cha
 ### PROGRAM
 
 ```
+#Reg_no: 212223060288
+#Name: Tharun Kumaran G
+
+def count_characters_in_file():
+    file_name = input("Enter the file name (with extension): ")
+
+    try:
+        with open(file_name, 'r', encoding='utf-8') as file:
+            text = file.read()
+
+        char_freq = {}
+
+        for char in text:
+            if char in char_freq:
+                char_freq[char] += 1
+            else:
+                char_freq[char] = 1
+
+        print("Character frequencies in the file:")
+        for char, freq in sorted(char_freq.items()):
+            display_char = repr(char) if char.isspace() else char
+            print(f"{display_char}: {freq}")
+
+    except FileNotFoundError:
+        print("Error: The file was not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+count_characters_in_file()
 
 ```
 
-
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/70e32095-a108-4dee-bd5e-fba8cdd7f435)
 
 ### RESULT
+
+Thus, the python program that reads a file and counts the frequency of each character in it has been executed and verified successfully.
