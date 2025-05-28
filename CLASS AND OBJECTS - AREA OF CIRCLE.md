@@ -43,7 +43,7 @@ print("Area of circle:",round(umbrella.rain(),2))
 
 ### OUTPUT
 
-![image](https://github.com/user-attachments/assets/e4b6439e-2bb6-4451-81e6-84a9ca2d8212)
+![image](https://github.com/user-attachments/assets/8d86e33e-5d6a-451a-b0c3-aff01f7a3579)
 
 ### RESULT
 
