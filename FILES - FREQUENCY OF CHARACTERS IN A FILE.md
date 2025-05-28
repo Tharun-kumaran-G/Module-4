@@ -33,38 +33,28 @@ To write a Python program that reads a file and counts the frequency of each cha
 #Reg_no: 212223060288
 #Name: Tharun Kumaran G
 
-def count_characters_in_file():
-    file_name = input("Enter the file name (with extension): ")
+from collections import defaultdict
 
-    try:
-        with open(file_name, 'r', encoding='utf-8') as file:
-            text = file.read()
+def create_file(file_path, content):
 
-        char_freq = {}
+with open(file_path, 'w') as file:
+    file.write(content)
+def char_frequency(file_path):
 
-        for char in text:
-            if char in char_freq:
-                char_freq[char] += 1
-            else:
-                char_freq[char] = 1
-
-        print("Character frequencies in the file:")
-        for char, freq in sorted(char_freq.items()):
-            display_char = repr(char) if char.isspace() else char
-            print(f"{display_char}: {freq}")
-
-    except FileNotFoundError:
-        print("Error: The file was not found.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
-
-count_characters_in_file()
+freq_dict=defaultdict(int)
+with open(file_path,'r')as file:
+    content=file.read()
+    for char in content:
+        freq_dict[char]+=1
+return freq_dict
 
 ```
 
 ### OUTPUT
 
-![image](https://github.com/user-attachments/assets/70e32095-a108-4dee-bd5e-fba8cdd7f435)
+![image](https://github.com/user-attachments/assets/437ecb54-c712-4773-a49e-cabf423c93a7)
+![image](https://github.com/user-attachments/assets/56e79a7c-dc9b-47d2-be3e-37f160d446bc)
+![image](https://github.com/user-attachments/assets/1771ffc2-79af-4bea-9078-a8d34959f0df)
 
 ### RESULT
 
