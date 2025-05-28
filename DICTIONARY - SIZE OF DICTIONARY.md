@@ -44,4 +44,4 @@ else:
 
 ### RESULT
 
-Thus, the python program to print the size of a dictionary using `getsizeof()` from the `sys` module has been executed and verified successfully.
+Thus, the python program to check whether a given key exists in a dictionary or not has been executed and verified successfully.
