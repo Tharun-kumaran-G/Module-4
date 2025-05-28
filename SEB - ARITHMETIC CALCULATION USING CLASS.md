@@ -63,7 +63,7 @@ while True:
 
 ### OUTPUT
 
-![image](https://github.com/user-attachments/assets/7b505fe2-a003-450e-a6c5-fb0882e58759)
+![image](https://github.com/user-attachments/assets/a4024acf-fb0a-4908-bb00-be0f655d10fc)
 
 ### RESULT
 
